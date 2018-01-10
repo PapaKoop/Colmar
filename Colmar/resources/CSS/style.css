@@ -1,0 +1,423 @@
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 64px;
+  background-color: white;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  height: 2rem;
+  align-items: center;
+}
+
+header .logo img {
+  height: 48px;
+}
+
+.logo h3 {
+  font-weight: bold;
+  color: #4d4d4d;
+  font-size: 1.5rem;
+}
+
+.logo h4 {
+  font-weight: lighter;
+  color: #d9d9d9;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  padding: 1.5rem 0;
+}
+
+nav ul li {
+  padding-left: 1rem;
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 64px;
+}
+
+.mobile-header img {
+  height: 40px;
+}
+
+@media only screen and (min-width: 601px) {
+  header {
+    display: flex;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+  }
+}
+
+/* Learn section */
+.learn {
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  padding: 32px 24px;
+}
+
+.learn-img {
+  width: 60%;
+}
+
+.learn-img img {
+  max-width: 100%;
+}
+
+.learn-text {
+  width: 40%;
+  text-align: left;
+  padding-left: 24px;
+  color: #4d4d4d;
+}
+
+.learn-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+ .learn-text h3 {
+   font-size: 2rem;
+   line-height: 1.2;
+ }
+
+ .learn-text h4 {
+   color: white;
+   background-color: darkgray;
+   width: 90%;
+   height: 48px;
+   text-align: center;
+   padding: 8px;
+   font-size: 2rem;
+ }
+
+ @media only screen and (min-width: 601px) {
+   .learn {
+     display: flex;
+   }
+ }
+
+ @media only screen and (max-width: 600px) {
+   .learn {
+     display: block;
+     width: 100%;
+     padding: 0;
+   }
+
+   .learn-img {
+     width: 100%;
+   }
+
+   .learn-text {
+     padding: 32px 16px;
+     width: 100%;
+   }
+
+   .learn-text h4 {
+     margin: 24px 16px 32px 0px;
+   }
+ }
+
+ /* Practice Section */
+ .practice {
+    display: flex;
+    align-items: flex-start;;
+    padding: 32px 24px;
+ }
+
+.keep-practicing {
+  width: 60%;
+  color: #4d4d4d;
+}
+
+.keep-practicing img {
+  width: 100%;
+}
+
+ .keep-practicing h1 {
+   font-size: 2.5rem;
+   font-weight: 600;
+   padding-left: 24px;
+   padding-bottom: 24px;
+ }
+
+ .keep-practicing h3 {
+   padding-left: 24px;
+   padding-bottom: 24px;
+ }
+
+ .keep-practicing h4 {
+   padding-left: 24px;
+   padding-bottom: 32px;
+ }
+
+ .practice-sidebar {
+   width: 40%;
+   padding-left: 24px;
+ }
+
+ .sidebar-item,
+ .sidebar-item-2 {
+   display: flex;
+   align-items: center;
+   padding: 16px;
+   border-left: 1px solid #d9d9d9;
+ }
+
+ .sidebar-item-2 {
+   background-color: #d9d9d9;
+ }
+
+.sidebar-item img,
+.sidebar-item-2 img {
+   max-width: 35%;
+  }
+
+.sidebar-text {
+  padding-left: 16px;
+}
+
+ .sidebar-text h2 {
+   font-size: 1.5rem;
+   font-weight: bold;
+ }
+
+ .sidebar-text h3 {
+   padding: 8px 0;
+   font-weight: normal;
+ }
+
+ .sidebar-text h4 {
+   color: blue;
+ }
+
+ @media only screen and (min-width: 601px) {
+   .keep-practicing {
+     display: block;
+   }
+
+   .sidebar-item .mobile,
+    .sidebar-item-2 .mobile {
+     display: none;
+   }
+ }
+
+ @media only screen and (max-width: 600px) {
+
+   .practice {
+    padding: 16px 0px;
+   }
+
+   .keep-practicing {
+     display: none;
+   }
+
+   .practice-sidebar {
+     width: 100%;
+     padding-left: 16px;
+   }
+
+   .sidebar-item,
+   .sidebar-item-2 {
+     display: block;
+     border-left: 0px;
+     width: 100%;
+   }
+
+   .sidebar-item .wide,
+    .sidebar-item-2 .wide {
+     display: none;
+   }
+
+   .sidebar-item img,
+    .sidebar-item-2 img {
+     max-width: 100%;
+   }
+
+   .sidebar-item-2 {
+     background-color: white;
+   }
+
+ }
+
+.learning {
+  background-color:#d9d9d9;
+  padding: 32px 48px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.learning-topics {
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.topic {
+  padding-bottom: 32px;
+  background-color: white;
+  max-width: 30%;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.topic img {
+  max-width: 100%;
+}
+
+.topic h2 {
+  font-size: 1.75rem;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.topic h3 {
+  padding-left: 16px;
+  font-size: 1.25rem;
+  font-weight: lighter;
+  padding-top: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .learning {
+    background-color: white;
+    padding: 32px 0 16px 0;
+  }
+
+  .learning .topic img,
+  .learning .topic h3 {
+    display: none;
+  }
+
+  .topic {
+    max-width: 100%;
+    margin-bottom: 8px;
+    padding-bottom: 0;
+  }
+
+  .learning-topics {
+    background-color: white;
+    display: block;
+  }
+
+  .learning .topic h2 {
+    padding: 16px 0 24px 16px;
+    background-color: #9d9d9d;
+  }
+
+}
+
+
+/* thesis exhibit section  */
+.thesis {
+  padding-top: 32px;
+}
+
+.thesis h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.thesis-exhibit {
+   display: flex;
+   align-items: flex-start;
+   padding: 32px 24px;
+}
+
+.thesis-video {
+  width: 60%;
+}
+
+.thesis-video h4 {
+  font-weight: bold;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.thesis-video p {
+  text-align: left;
+  font-weight: lighter;
+  font-size: 1.25rem;
+  padding-top: 8px;
+}
+
+.thesis-video video {
+  width: 100%;
+}
+
+.thesis-practice-sidebar {
+  width: 40%;
+  padding-left: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .thesis-video {
+    width: 100%;
+  }
+
+  .thesis-video h4,
+  .thesis-video p {
+    display: none;
+  }
+
+  .thesis-practice-sidebar {
+    display: none;
+  }
+}
+
+footer {
+  padding: 16px 24px 48px 24px;
+  border-top: 1px solid #9d9d9d;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    padding: 16px 0 16px 24px;
+  }
+
+  footer nav {
+    display: none;
+  }
+}
